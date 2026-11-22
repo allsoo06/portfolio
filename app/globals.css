@@ -542,6 +542,8 @@ section:first-child h2 {
 
 .demo-body {
   padding: 16px;
+  --tool-panel: var(--card);
+  --tool-field: #fff;
 }
 
 .demo > .btn.primary {

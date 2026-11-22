@@ -16,6 +16,10 @@ export const defaultProfile = {
     "보안 알고리즘",
     "패킷분석 및 공격",
   ],
+  toeic: { score: 910, max: 990, date: "2026-11" }, // TODO: 토익 점수/시험일
+  certs: [
+    { name: "리눅스 마스터 2급", status: "1차 합격" }, // TODO: 취득/준비중/목표
+  ],
   contact: {
     email: "allsoo06@naver.com", // TODO: 본인 이메일
     github: "https://github.com/allsoo06", // TODO: 본인 GitHub
@@ -31,6 +35,7 @@ export const defaultProjects = [
     tags: ["Next.js", "MongoDB", "Vercel"],
     repoUrl: "https://github.com/allsoo06/portfolio", // TODO: 이 프로젝트 저장소
     deployUrl: "https://portfolio-my-app-69b2.vercel.app", // TODO: 이 사이트 배포 주소
+    embed: true,
     current: false,
     order: 2,
   },
@@ -41,6 +46,7 @@ export const defaultProjects = [
     tags: ["Lecture", "In Progress"], // TODO: 사용 기술로 변경
     repoUrl: "https://github.com/allsoo06/my-app", // TODO: 강의 실습 저장소 주소
     deployUrl: "https://my-app-my-app-69b2.vercel.app/", // TODO: 강의 실습 배포 주소
+    embed: true,
     current: true,
     order: 1,
   },
@@ -51,6 +57,7 @@ export const defaultProjects = [
     tags: ["Lecture", "In Progress"], // TODO: 사용 기술로 변경
     repoUrl: "https://github.com/allsoo06/wss_teamproject", // TODO: 강의 실습 저장소 주소
     deployUrl: "https://wss-teamproject.vercel.app/", // TODO: 강의 실습 배포 주소
+    embed: true,
     current: true,
     order: 3,
   },

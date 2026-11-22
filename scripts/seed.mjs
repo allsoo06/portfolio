@@ -1,6 +1,10 @@
 // 사용법: npm run seed
+import dns from "node:dns";
 import { MongoClient } from "mongodb";
 import { defaultProfile, defaultProjects } from "../data/defaults.mjs";
+
+// 일부 네트워크에서 mongodb+srv 조회(SRV)가 막혀서 DNS 를 직접 지정
+dns.setServers(["8.8.8.8", "1.1.1.1"]);
 
 const uri = process.env.MONGODB_URI;
 if (!uri) {
